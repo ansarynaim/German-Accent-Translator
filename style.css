@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.white{
+  color: white;
+}
+
+.container {
+  background-image: url(images/german1.jpg);
+  background-size: 1100px;
+  background-position-x: -115px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+textarea {
+  padding: 10px;
+  height: 20vh;
+  width: 60vw;
+  resize: none;
+  border: 2px solid rgba(0, 0, 0, 0.445);
+  border-radius: 20px;
+  outline: none;
+  color: teal;
+  font-size: 1.5rem;
+  overflow: hidden;
+  background-color: #e2e8f0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 7px;
+}
+
+button {
+  width: 10rem;
+  height: 2.5rem;
+  background-color: #06b6d4;
+  border: 1px solid #383737;
+  color: #ffe316;
+  border-radius: 10px;
+  transition: 0.3s linear;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 15px;
+}
+button:hover {
+  transform: scale(1.1);
+}
+
+textarea,
+button {
+  margin: 10px;
+}
+
+.content {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content button {
+  margin: auto;
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+  .content,
+  textarea {
+    width: 90%;
+    height: 40%;
+  }
+  textarea,
+  button {
+    margin: 20px;
+  }
+  .content {
+    margin-bottom: 250px;
+  }
+  textarea {
+    font-size: 1.4rem;
+  }
+}
