@@ -8,9 +8,11 @@ function myUrl(text) {
   return serverUrl + "?" + "text=" + text;
 }
 
-function errorHandler() {
-  console.log("error occured");
+function errorHandler(error){
+  console.log("Error occured : ",error);
+  alert("Something went wrong with server, please try again after some times");
 }
+
 
 function clickHandler() {
   var inputText = input.value;
